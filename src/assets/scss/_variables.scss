@@ -1,0 +1,106 @@
+@function rem($pixels, $context: $browser-context) {
+  @return calc($pixels/$context * 1rem);
+}
+
+$browser-context: 16;
+
+// fonts
+$f-heading: 'Inter', arial, sans-serif;
+$f-text: 'Inter', arial, sans-serif;
+
+// colors
+$c-primary: #31b0ed;
+$c-primary-lighter: #37bdfd;
+$c-primary-darker: #13a2e7;
+$c-primary-bgcolor: #e5e5e5;
+
+$c-black: #000;
+$c-black-shade: #000000b2;
+$c-secondary: #1672eb;
+$c-blue-dark: #4990ed;
+$c-secondary-background: #4fabff;
+$c-white: #fff;
+$c-dark: #29294b;
+$c-yellow: #fdc504;
+$c-blue: #a9e7ff;
+$c-success: #31d08d;
+$c-text: #4a4a68;
+$c-subtle-text: #8c8ca1;
+$c-background: #ecf1f4;
+$c-cards: #fafcfe;
+$c-error: #ff5e78;
+$c-light-gray-text: #8c9eaf;
+$c-light-green: #bfffc3;
+$c-inactive: #a6a6a6;
+$c-red: #f00;
+$c-basic-blue: #daedff;
+$c-light-blue: #ebf8ff;
+$c-dark-blue: #29294b;
+$c-gray: #8296a9;
+$c-secondary-gray: #e0e0e0;
+$c-additional-gray: #f6f8fc;
+$c-light-gray: #f8f8f8;
+$c-dark-gray: #47484b;
+$c-darker-gray: #323234;
+$c-disabled-bg: #f2fbff;
+$c-disabled-text: #8296a9;
+$c-active-text: #0088ce;
+$c-news-text: #696981;
+$c-disabled-input-text: #7b8f99;
+$c-header-menu-bg: #d3f1ff;
+
+$c-input-border-default: #e0e0e0;
+$c-input-border-hover: #8196a9;
+$c-input-border-active: #29294b;
+$c-disabled-button-bg: #e8f7ff;
+$c-border: #e4e9ef;
+$c-border-gray: #c4c4c4;
+
+// buttons
+$c-button-active: #0087cb;
+$c-button-background: #8ed9ff;
+
+// dropdown
+$c-dropdown-text-hover: #8ed9ff80;
+$c-input-label-text: #9a9ab3;
+
+// cards
+$c-card-promo: #fff2d3;
+$c-card-promocod: #bff4e1;
+$c-alert-tag: rgba(255, 204, 77, 0.3);
+
+// outline
+$outline-shadow: 3px 2px 22px -6px rgba(0, 0, 0, 0.75);
+
+// transitions
+$transition-primary: 0.3s;
+$transition-secondary: 0.2s;
+
+// modals
+$m-background-modal: rgba(0, 0, 0, 0.8);
+
+$imgBase: '../images/';
+$iconsBase: '@/assets/icons/';
+
+$small: 560px;
+$middle: 760px;
+$tablet: 1000px;
+$laptop: 1170px;
+$desktop: 1300px;
+$wide: 1400px;
+$large: 1800px;
+
+// breakpoints
+$xxs-s: 300px;
+$xxs: 350px;
+$android: 370px;
+$xs: 380px;
+$sm-s: 400px;
+$sm: 560px;
+$smd: 780px;
+$md: 1000px;
+$slg: 1025px;
+$lg: 1285px;
+$xlg: 1370px;
+$xxlg: 1445px;
+$xxxlg: 1925px;

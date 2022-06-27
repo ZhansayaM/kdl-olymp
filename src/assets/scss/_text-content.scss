@@ -1,0 +1,139 @@
+.text-normalize {
+  $f-heading: 'Inter', arial, sans-serif;
+
+  color: $c-dark;
+  font-style: normal;
+
+  h1,
+  h1 * {
+    font-family: $f-heading;
+    margin: 20px 0;
+    @include font-size(56px, 62px, 500);
+    @include medium-tablet {
+      @include font-size(48px, 50px, 500);
+    }
+    @include tablet {
+      @include font-size(40px, 46px, 500);
+    }
+    @include phone {
+      @include font-size(32px, 40px, 500);
+    }
+    @include small-phone {
+      @include font-size(28px, 34px, 500);
+    }
+  }
+  h2,
+  h2 * {
+    font-family: $f-heading;
+    margin: 15px 0;
+    @include font-size(44px, 48px, 500);
+    @include medium-tablet {
+      @include font-size(36px, 40px, 400);
+    }
+    @include phone {
+      @include font-size(28px, 36px, 400);
+    }
+    @include small-phone {
+      @include font-size(24px, 30px, 400);
+    }
+  }
+  h3,
+  h3 * {
+    font-family: $f-heading;
+    margin: 10px 0;
+    @include font-size(38px, 44px, 500);
+    @include medium-tablet {
+      font-size: 2rem;
+    }
+    @include tablet {
+      margin: 0 0 10px 0;
+    }
+  }
+  h4,
+  h4 * {
+    font-family: $f-heading;
+    margin: 10px 0;
+    @include font-size(28px, 34px, 500);
+    @include small-laptop {
+      font-size: 1.4rem;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    @include medium-tablet {
+      font-size: 1.2rem;
+    }
+    @include tablet {
+      font-size: 1.4rem;
+      word-wrap: break-word;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0 0 10px 0;
+    }
+    @include phone {
+      @include font-size(22px, 27px);
+    }
+    @include small-phone {
+      @include font-size(18px, 22px);
+    }
+  }
+  h5,
+  h5 * {
+    font-family: $f-heading;
+    margin: 10px 0;
+    @include font-size(22px, 32px);
+    @include phone {
+      @include font-size(16px, 22px);
+    }
+  }
+  h6,
+  h6 * {
+    font-family: $f-heading;
+    margin: 10px 0;
+    @include font-size(20px, 24px);
+    @include tablet {
+      @include font-size(20px, 30px);
+    }
+    @include phone {
+      @include font-size(18px, 26px);
+    }
+  }
+  ul {
+    list-style: none;
+    li::before {
+      content: '\2022';
+      color: $c-primary;
+      font-weight: bold;
+      display: inline-block;
+      width: 8px;
+      margin-right: 19px;
+      @include phone {
+        width: auto;
+        font-size: 2.1em;
+        margin-right: 18px;
+        margin-top: -3px;
+      }
+    }
+    li {
+      margin-bottom: 20px;
+      @include flex-row();
+      @include font-size(16px, 24px);
+      @include flex-row();
+      @include phone {
+        margin-bottom: 18px;
+        @include font-size(14px, 20px);
+      }
+    }
+  }
+  p,
+  p * {
+    @include font-size(16px, 24px);
+    @include phone {
+      @include font-size(14px, 20px);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"],
+      "icons/*": ["./src/assets/icons/*"],
+      "atoms/*": ["./src/components/atoms/*"],
+      "molecules/*": ["./src/components/molecules/*"],
+      "organisms/*": ["./src/components/organisms/*"],
+      "templates/*": ["./src/components/templates/*"],
+      "directives/*": ["./src/directives/*"],
+      "services/*": ["./src/services/*"],
+      "repositories/*": ["./src/repositories/*"],
+      "types/*": ["./src/types/*"],
+      "plugins/*": ["./src/plugins"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}

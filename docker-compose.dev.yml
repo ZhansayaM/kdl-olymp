@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  dev:
+    platform: linux/amd64
+    image: node:14-alpine
+    ports:
+      - ${APP_PORT}:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.nuxt
+    environment:
+      NODE_ENV: development
+      HOST: 0.0.0.0
+    working_dir: /app
+    command: sh -c "yarn && yarn serve"
